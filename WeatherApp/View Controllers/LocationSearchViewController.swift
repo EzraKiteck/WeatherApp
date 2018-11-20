@@ -51,7 +51,7 @@ class LocationSearchViewController: UIViewController, UISearchBarDelegate {
         
     }
     
-    //Retrieves weather data for coordinates
+    // Retrieves weather data for coordinates
     func retrieveWeatherData(latitude: Double, longitude: Double) {
         API_Manager.getWeather(for: (latitude, longitude)) { (weatherData, error) in
             if let recievedError = error {

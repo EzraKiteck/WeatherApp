@@ -19,7 +19,7 @@ class GeocodeingData {
         case latitude = "lat"
         case longitude = "lng"
     }
-    
+
     //Variables
     var formattedAddress: String
     var latitude: Double

@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/swift,macos
 # Edit at https://www.gitignore.io/?templates=swift,macos
 
@@ -34,7 +33,6 @@ Temporary Items
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-APIKeys.swift
 
 ## Build generated
 build/
@@ -89,6 +87,8 @@ playground.xcworkspace
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
+
+WeatherApp/API/APIKeys.swift
 
 Carthage/Build
 

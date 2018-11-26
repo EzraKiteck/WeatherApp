@@ -69,6 +69,7 @@ class LocationSearchViewController: UIViewController, UISearchBarDelegate {
         }
     }
     
+    //Fetches weather data from specified location
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchAddress = searchBar.text?.replacingOccurrences(of: " ", with: "+") else {
             return
@@ -76,6 +77,7 @@ class LocationSearchViewController: UIViewController, UISearchBarDelegate {
         retrieveGeocodingData(searchAddress: searchAddress)
     }
     
+    //Passes data to the main screen via segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? ViewController,
         let recievedGeocodingData = geocodingData,

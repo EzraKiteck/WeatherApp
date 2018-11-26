@@ -20,10 +20,12 @@ class GeocodeingData {
         case longitude = "lng"
     }
     
+    //Variables
     var formattedAddress: String
     var latitude: Double
     var longitude: Double
     
+    //Initializer
     init(formattedAddress: String, latitude: Double, longitude: Double) {
         self.formattedAddress = formattedAddress
         self.latitude = latitude

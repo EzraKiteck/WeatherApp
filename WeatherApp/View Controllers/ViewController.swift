@@ -12,18 +12,21 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
 
+    //IB Outlets
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var weatherIcon: UILabel!
     @IBOutlet weak var currentTemperature: UILabel!
     @IBOutlet weak var lowTemp: UILabel!
     @IBOutlet weak var highTemp: UILabel!
     
+    //Gives location
     var displayGeocodingData: GeocodeingData! {
         didSet {
             locationLabel.text = displayGeocodingData.formattedAddress
         }
     }
     
+    //Shows current weather data
     var displayWeatherData: WeatherData! {
         didSet {
             weatherIcon.text = displayWeatherData.condition.icon

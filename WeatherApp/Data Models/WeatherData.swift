@@ -47,6 +47,7 @@ class WeatherData {
             }
         }
     }
+    
     enum WeatherDataKeys: String {
         case currently = "currently"
         case temperature = "temperature"
@@ -57,6 +58,7 @@ class WeatherData {
         case temperatureLow = "temperatureLow"
     }
     
+    //Variables
     let temperature: Double
     let highTemperature: Double
     let lowTemperature: Double

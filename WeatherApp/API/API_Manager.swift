@@ -43,6 +43,7 @@ struct API_Manager {
         
     }
     
+    //Gets the geocoding data from the url
     static func geocode(address: String, onCompletion: @escaping (GeocodeingData?, Error?) -> Void) {
         
         let googleURL = "https://maps.googleapis.com/maps/api/geocode/json?address="
